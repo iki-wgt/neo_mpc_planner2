@@ -32,8 +32,8 @@ from scipy.optimize import minimize
 import math
 from functools import partial
 import time
-from neo_nav2_py_costmap2D.line_iterator import LineIterator
-from neo_nav2_py_costmap2D.costmap import Costmap2d
+from neo_nav2_py_costmap2d.line_iterator import LineIterator
+from neo_nav2_py_costmap2d.costmap import Costmap2d
 from geometry_msgs.msg import PolygonStamped
 from tf2_ros import TransformException
 from tf2_ros.buffer import Buffer
