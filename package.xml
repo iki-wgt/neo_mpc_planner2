@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
     <name>neo_mpc_planner2</name>
-    <version>1.0.0</version>
+    <version>1.1.0</version>
     <description>
 
         This package provides a spline based implementation to local robot navigation on a plane.
@@ -16,26 +16,32 @@
 
     <buildtool_depend>ament_cmake</buildtool_depend>
     <buildtool_depend>ament_cmake_python</buildtool_depend>
-  
-    <exec_depend>costmap_converter</exec_depend>
-    <exec_depend>costmap_converter_msgs</exec_depend>
 
-    <exec_depend>geometry_msgs</exec_depend>
-    <exec_depend>libg2o</exec_depend>
-    <exec_depend>dwb_critics</exec_depend>
-    <exec_depend>nav2_core</exec_depend>
-    <exec_depend>nav2_costmap_2d</exec_depend>
-    <exec_depend>nav2_msgs</exec_depend>
-    <exec_depend>nav2_util</exec_depend>
-    <exec_depend>pluginlib</exec_depend>
-    <exec_depend>rclcpp</exec_depend>
+    <depend>rclcpp</depend>
+    <depend>rclcpp_action</depend>
+    <depend>rclcpp_lifecycle</depend>
+    <depend>pluginlib</depend>
+
+    <depend>nav2_core</depend>
+    <depend>nav2_costmap_2d</depend>
+    <depend>nav2_util</depend>
+
+    <depend>geometry_msgs</depend>
+    <depend>nav_msgs</depend>
+    <depend>tf2_ros</depend>
+    <depend>tf2_sensor_msgs</depend>
+    <depend>tf2_geometry_msgs</depend>
+    <depend>tf2_eigen</depend>
+    <depend>angles</depend>
+    <depend>neo_srvs2</depend>
+
+    <!-- Optimization server deps -->
     <depend>rclpy</depend>
-    <exec_depend>rclcpp_action</exec_depend>
-    <exec_depend>rclcpp_lifecycle</exec_depend>
-    <exec_depend>std_msgs</exec_depend>
-    <exec_depend>tf2_ros</exec_depend>
-    <exec_depend>visualization_msgs</exec_depend>
-    <exec_depend>neo_srvs2</exec_depend>
+    <exec_depend>rcl_interfaces</exec_depend>
+    <exec_depend>python3-numpy</exec_depend>
+    <exec_depend>python3-scipy</exec_depend>
+    <depend>neo_nav2_py_costmap2D</depend>
+
     <exec_depend>nav2_bringup</exec_depend>
     <export>
         <build_type>ament_cmake</build_type>
